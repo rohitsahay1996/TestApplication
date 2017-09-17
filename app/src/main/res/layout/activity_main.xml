@@ -97,9 +97,12 @@
             android:id="@+id/main_signup_textview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="@android:color/white"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+
+
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -122,7 +125,7 @@
             />
 
         <TextView
-            android:id="@+id/main_signup_textview2"
+            android:id="@+id/main_resetpass_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reset Password"
