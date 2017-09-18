@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void send_to_start() {
-        Intent i = new Intent(MainActivity.this,SignupActivity.class);
+        Intent i = new Intent(MainActivity.this,loginAcivity.class);
         startActivity(i);
         finish();
     }

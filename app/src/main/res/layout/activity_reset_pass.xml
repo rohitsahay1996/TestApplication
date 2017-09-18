@@ -4,47 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/back1"
     tools:context="com.example.rohit.testapp.ResetPass">
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/reset_email"
         android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:backgroundTint="@android:color/black"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="16dp"
+        android:drawableTint="@android:color/white"
         android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColorHint="#000"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="57dp" />
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_below="@+id/editText4"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@android:color/black"
+        android:id="@+id/reset_password"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/reset_email"
+        android:layout_alignStart="@+id/reset_email"
+        android:layout_below="@+id/reset_email"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawablePadding="16dp"
+        android:drawableTint="@android:color/white"
         android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:textColorHint="#000" />
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ffff" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:text="Reset"
-        android:textColor="@android:color/black"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 </RelativeLayout>

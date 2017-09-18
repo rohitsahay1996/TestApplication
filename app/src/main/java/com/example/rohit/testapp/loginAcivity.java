@@ -36,8 +36,8 @@ public class loginAcivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_acivity);
         mLogin = (Button) findViewById(R.id.login_login_btn);
-        mEmail = (EditText) findViewById(R.id.login_email_text);
-        mPassword = (EditText) findViewById(R.id.login_password_text);
+        mEmail = (EditText) findViewById(R.id.reset_email);
+        mPassword = (EditText) findViewById(R.id.reset_password);
         mResetPass = (TextView) findViewById(R.id.login_resetpass_textview);
         mLoginProgress = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
