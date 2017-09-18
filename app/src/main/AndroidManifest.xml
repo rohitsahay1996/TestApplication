@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ResetPass" />
-        <activity android:name=".bodyActivity"></activity>
+        <activity android:name=".bodyActivity" />
+        <activity android:name=".loginAcivity"></activity>
     </application>
 
 </manifest>

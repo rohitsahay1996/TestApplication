@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hospo"
+    android:background="@drawable/back1"
     android:scrollbarSize="16dp"
     tools:context="com.example.rohit.testapp.SignupActivity">
 
@@ -21,10 +21,11 @@
         android:drawablePadding="16dp"
         android:drawableTint="#ffff"
         android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Display Name"
         android:inputType="textPersonName"
-        android:padding="20dp"
 
+        android:padding="20dp"
         android:textColor="#ffff"
         android:textColorHint="#ffff" />
 
@@ -43,9 +44,10 @@
         android:drawableTint="#ffff"
         android:ems="10"
 
+        android:fontFamily="cursive"
         android:hint="Email"
-        android:inputType="textEmailAddress"
 
+        android:inputType="textEmailAddress"
         android:padding="20dp"
         android:textColor="#ffff"
         android:textColorHint="#ffff" />
@@ -63,6 +65,7 @@
         android:drawablePadding="16dp"
         android:drawableTint="#ffff"
         android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="20dp"
@@ -78,6 +81,7 @@
         android:layout_alignParentStart="true"
         android:background="@android:drawable/screen_background_light_transparent"
         android:editable="true"
+        android:fontFamily="@string/common_google_play_services_enable_button"
         android:padding="20dp"
         android:text="Sign up"
         android:textColor="@android:color/black" />
@@ -86,14 +90,15 @@
         android:id="@+id/signup_already"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_btn"
         android:layout_marginBottom="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/signip_tv"
+        android:fontFamily="cursive"
         android:text="Login"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_above="@+id/signup_btn"
-        android:layout_toEndOf="@+id/signip_tv"
-        android:layout_marginStart="16dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/signip_tv"
@@ -101,6 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/signup_already"
         android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
         android:text="Already have an account?"
         android:textColor="@android:color/white"
         android:textSize="15sp" />

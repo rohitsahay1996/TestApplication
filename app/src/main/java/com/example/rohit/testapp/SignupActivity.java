@@ -43,7 +43,6 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
         mSignUp = (Button) findViewById(R.id.signup_btn);
         mAlready = (TextView) findViewById(R.id.signup_already);
         mEmail = (EditText) findViewById(R.id.signup_email);
@@ -59,8 +58,8 @@ public class SignupActivity extends AppCompatActivity {
         mAlready.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i3 = new Intent(SignupActivity.this,MainActivity.class);
-                startActivity(i3);
+                Intent ilog = new Intent(SignupActivity.this,loginAcivity.class);
+                startActivity(ilog);
             }
         });
 
@@ -112,7 +111,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
            if(task.isSuccessful()){
-               signup_dialog.dismiss();
+
 
                FirebaseUser current_user = FirebaseAuth.getInstance().getCurrentUser();
                String uid = current_user.getUid();
@@ -139,10 +138,11 @@ public class SignupActivity extends AppCompatActivity {
                    public void onComplete(@NonNull Task<Void> task) {
                        if(task.isSuccessful()){
 
-                           Intent signup_intent = new Intent(SignupActivity.this,bodyActivity.class);
+                           Intent signup_intent = new Intent(SignupActivity.this,MainActivity.class);
                            startActivity(signup_intent);
                            signup_intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                            finish();
+                           signup_dialog.dismiss();
                        }
                        else{
 
