@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     //Firebase Declaration
     private FirebaseAuth mAuth;
 
-//MyApp
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
